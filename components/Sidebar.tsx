@@ -7,6 +7,7 @@ import Image from 'next/image'
 import links from '@/utils/links'
 import { Button } from './ui/button'
 import Link from 'next/link'
+import Chatbot from './ChatBot'
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -37,6 +38,7 @@ const Sidebar = () => {
           </Button>
         ))}
       </div>
+      <Chatbot></Chatbot>
     </aside>
   )
 }
